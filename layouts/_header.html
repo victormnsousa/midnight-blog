@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.languageCode }}">	
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ generatorMeta() }}
+
+    <title> {{page.title}} | midnight creatures </title>
+    <link rel="stylesheet" href="/style.css">	
+  </head>
+
+
+	<body>
+    <div class="container">
+      <header class="top-bar">
+        <div class="workspaces">
+          <span class="active">1:blog</span>
+          <span>2:atelier_codes</span>
+          <span>3:dead_pixels</span>
+          <span>4:midnight_terminal</span>
+        </div>
+      <div class="right-info">
+        {{ os.getenv("USER") }}@{{ os.getenv("HOSTNAME") }}:~$ &nbsp;|&nbsp; {{ page.title or "midnight" }}
+      </div>
+</header>
+<div class="middleOuter"><div class="middleInner">

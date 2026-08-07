@@ -1,0 +1,23 @@
+{{
+page.title = "bossa_tech_blog"
+}}
+
+{{
+local posts =subpages("/posts/") or {}
+
+-- List all blog posts.
+  table.sort(posts, function(a,b)
+  local dateA = a.date or "1970-01-01"
+  local dateB = b.date or "1970-01-01"
+  return dateA > dateB 
+end)
+
+for _,subpage in ipairs(posts) do
+	if not subpage.isIndex then
+		echoRaw(include("_blogPost", {
+			page        = subpage,
+			showSummary = true,
+		}))
+	end
+end
+}}

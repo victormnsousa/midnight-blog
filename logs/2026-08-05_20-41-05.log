@@ -1,0 +1,30 @@
+==== LuaWebGen v1.5.0 ====
+2026-08-05
+SiteFolder: /home/victor/Projetos/blog/bossa_tech_blog
+[20:41:05] --> config(start)
+[20:41:05] --> config(finish)
+[20:41:05] Generating website...
+[20:41:05] --> RegularGeneration(start)
+[20:41:05] --> Processing(start): content/style.css
+[20:41:05] --> Processing(finish): content/style.css
+[20:41:05] Writing: output/style.css
+[20:41:05] --> Processing(start): content/index.html
+[20:41:05] --> Processing(start): content/posts/2olarmundo.md
+[20:41:05] --> Processing(start): content/posts/teste2.md
+[20:41:05] --> Processing(finish): content/posts/teste2.md
+[20:41:05] Writing: output/posts/teste2/index.html
+[20:41:05] --> Processing(finish): content/posts/2olarmundo.md
+[20:41:05] Writing: output/posts/2olarmundo/index.html
+[20:41:05] --> Processing(finish): content/index.html
+[20:41:05] Writing: output/index.html
+[20:41:05] --> RegularGeneration(finish)
+[20:41:05] Generating website... done!
+----------------------------------------------------------------
+Files: 4
+    Pages:           3  (Skipped: 0)
+    OtherTemplates:  1
+    OtherFiles:      0  (Preserved: 0, 100.0%)
+TotalSize: 10.45 KiB
+Time: 0.01 seconds
+----------------------------------------------------------------
+Finished!

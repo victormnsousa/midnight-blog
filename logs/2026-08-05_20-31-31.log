@@ -1,0 +1,34 @@
+==== LuaWebGen v1.5.0 ====
+2026-08-05
+SiteFolder: /home/victor/Projetos/blog/bossa_tech_blog
+[20:31:31] --> config(start)
+[20:31:31] --> config(finish)
+[20:31:31] Generating website...
+[20:31:31] --> RegularGeneration(start)
+[20:31:31] --> Processing(start): content/style.css
+[20:31:31] --> Processing(finish): content/style.css
+[20:31:31] Writing: output/style.css
+[20:31:31] --> Processing(start): content/index.html
+[20:31:31] --> Processing(start): content/posts/2olarmundo.md
+[20:31:32] --> Processing(start): content/posts/teste2.md
+[20:31:32] --> Processing(abort): content/posts/teste2.md
+[20:31:32] --> Processing(finish): content/posts/2olarmundo.md
+[20:31:32] Writing: output/posts/2olarmundo/index.html
+[20:31:32] ERROR: content/index.html:8: Tried to get non-existent global or script 'posts'.
+stack traceback:
+	[C]: in 'error'
+	/home/victor/LuaWebGen/srcgen/functions.lua:934: in 'errorf'
+	/home/victor/LuaWebGen/srcgen/app.lua:1243: in <app.lua:1228>
+	content/index.html:8: in 'main_chunk'
+	/home/victor/LuaWebGen/srcgen/functions.lua:876: in 'templateContext'
+	/home/victor/LuaWebGen/srcgen/functions.lua:883: in '_parseAndRunTemplate'
+	/home/victor/LuaWebGen/srcgen/functions.lua:908: in 'parseAndRunTemplate'
+	/home/victor/LuaWebGen/srcgen/functions.lua:1983: in 'generateFromTemplateString'
+	/home/victor/LuaWebGen/srcgen/functions.lua:2047: in 'generateFromTemplateFile'
+	/home/victor/LuaWebGen/srcgen/app.lua:1542: in <app.lua:1273>
+	[C]: in 'xpcall'
+	/home/victor/LuaWebGen/srcgen/app.lua:1869: in main chunk
+	/home/victor/LuaWebGen/webgen.lua:34: in 'noneContext'
+	/home/victor/LuaWebGen/webgen.lua:39: in main chunk
+
+Aborted after error!

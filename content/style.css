@@ -1,0 +1,182 @@
+/* ===== BLOCO 1: Reset e base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAF3EB;  /* fundo da barra do i3 */
+  color: #443838;            /* texto escuro do Neovim */
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== BLOCO 2: Container principal ===== */
+.container {
+  max-width: 1100px;
+  width: 100%;
+  background-color: #DCD3C6;  /* fundo do Neovim */
+  border-radius: 12px;
+  padding: 30px 35px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #443838;  /* borda escura */
+}
+
+/* ===== BLOCO 3: Barra superior estilo i3wm ===== */
+.top-bar {
+  background-color: #443838;     /* fundo escuro */
+  color: #8CAFB1;               /* texto claro */
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Hack', monospace;
+  font-size: 0.9rem;
+  border-bottom: 3px solid #639BA1;  /* linha de destaque */
+}
+
+.top-bar .workspaces span {
+  background-color: #BDB3A1;     /* fundo dos workspaces inativos */
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-right: 6px;
+  color: #443838;
+  transition: 0.2s;
+  cursor: default;
+}
+
+.top-bar .workspaces span.active {
+  background-color: #443838;     /* destaque da workspace ativa */
+  color: #BDB3A1;
+  font-weight: bold;
+}
+
+.top-bar .right-info {
+  color: #BDB3A1;
+  font-size: 0.8rem;
+}
+
+/* ===== BLOCO 4: Tipografia ===== */
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hack', monospace;
+  color: #443838;               /* texto escuro */
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-left: 6px solid #639BA1;  /* linha lateral azul */
+  padding-left: 16px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #BDB3A1; /* linha inferior clara */
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+/* Parágrafos e texto geral */
+p {
+  margin-bottom: 1.2em;
+  line-height: 1.7;
+}
+
+/* Links */
+a {
+  color: #639BA1;               /* azul suave */
+  text-decoration: none;
+  border-bottom: 1px dotted #BDB3A1;
+  transition: 0.2s;
+}
+a:hover {
+  color: #443838;               /* escuro ao passar o mouse */
+  border-bottom-color: #443838;
+}
+
+/* Listas */
+ul, ol {
+  margin: 0.8em 0 1.2em 2em;
+  line-height: 1.7;
+}
+
+/* Blocos de código */
+pre, code {
+  font-family: 'Hack', monospace;
+  background-color: #646261;     /* fundo cinza escuro */
+  color: #FAF3EB;               /* texto claro */
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  font-size: 0.9rem;
+}
+
+pre {
+  padding: 16px;
+  overflow-x: auto;
+  border-left: 4px solid #639BA1; /* linha lateral azul */
+  margin: 1.5em 0;
+}
+
+/* Citações */
+blockquote {
+  border-left: 4px solid #639BA1;
+  padding-left: 20px;
+  margin: 1.5em 0;
+  color: #5E4A48;
+  font-style: italic;
+}
+
+/* ===== BLOCO 5: Rodapé ===== */
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #BDB3A1;
+  color: #8D887B;
+  font-size: 0.85rem;
+  text-align: center;
+  font-family: 'Hack', monospace;
+}
+
+footer a {
+  color: #639BA1;
+  border-bottom: none;
+}
+
+footer a:hover {
+  color: #443838;
+}
+
+/* ===== BLOCO 6: Lista de posts ===== */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #BDB3A1;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-date {
+  float: right;
+  color: #8D887B;
+  font-size: 0.8rem;
+}
