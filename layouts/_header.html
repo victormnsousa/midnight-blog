@@ -14,13 +14,13 @@
     <div class="container">
       <header class="top-bar">
         <div class="workspaces">
-          <span class="active">1:blog</span>
-          <span>2:atelier_codes</span>
-          <span>3:dead_pixels</span>
-          <span>4:midnight_terminal</span>
+    <a href="/"><span class="active">1:blog</span></a>
+    <a href="/atelier_codes"><span>2:atelier_codes</span></a>
+    <a href="/dead_pixels"><span>3:dead_pixels</span></a>
+    <a href="/midnight_terminal"><span>4:midnight_terminal</span></a>
         </div>
       <div class="right-info">
-        {{ os.getenv("USER") }}@{{ os.getenv("HOSTNAME") }}:~$ &nbsp;|&nbsp; {{ page.title or "midnight" }}
+        {{ os.getenv("USER") }}@{{ os.getenv("HOSTNAME") }}:~$ &nbsp;|&nbsp; {{ page.title or "midnight" }} &nbsp;|&nbsp; <a href="/about">about</a>
       </div>
 </header>
 <div class="middleOuter"><div class="middleInner">
